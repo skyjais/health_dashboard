@@ -1,0 +1,72 @@
+/* Outer container for spacing and structure */
+.scrollable-table-container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header above the table */
+.table-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Wrapper to make the table scrollable */
+.scrollable-table-wrapper {
+  max-height: 160px; /* Constrain height of the table */
+  overflow-y: auto; 
+  /* Enable vertical scrolling */
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+}
+
+/* Style the scrollbar */
+.scrollable-table-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-table-wrapper::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 4px;
+}
+
+.scrollable-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
+
+/* Style the table */
+.scrollable-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+/* Table headers with sticky behavior */
+.scrollable-table thead th {
+  background-color: #f1f1f1;
+  color: #333333;
+  font-weight: 600;
+  padding: 10px;
+  text-align: left;
+  position: sticky;
+  top: 0; /* Keeps headers visible when scrolling */
+  z-index: 10;
+  border-bottom: 2px solid #dddddd;
+}
+
+/* Table rows and cells */
+.scrollable-table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #eeeeee;
+  color: #555555;
+}
+
+/* Row hover effect for better UX */
+.scrollable-table tbody tr:hover {
+  background-color: #f9f9f9;
+}

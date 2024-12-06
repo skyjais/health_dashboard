@@ -1,0 +1,81 @@
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    gap: 2px;
+  }
+  
+  /* Style to add different background colors for each type of stat */
+  .stat-card.normal {
+    background-color: #e6f7fe;
+  }
+  
+  .stat-card.high {
+    background-color: #ffe6e8;
+  }
+  
+  .stat-card.low {
+    background-color: #ffebed;
+  }
+  
+  /* Icon styling */
+  .stat-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stat-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Label styling */
+  .stat-label {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Main value (large) styling */
+  .stat-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin: 10px 0;
+  }
+  
+  /* Status information */
+  .stat-status {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .stat-status::before {
+    content: "• ";
+    font-size: 20px;
+    color: #333;
+    margin-right: 4px;
+  }
+  
+  /* Example color tweaks */
+  .normal .stat-status::before {
+    color: #4caf50;
+  }
+  
+  .low .stat-status::before {
+    color: #f44336;
+  }
+  

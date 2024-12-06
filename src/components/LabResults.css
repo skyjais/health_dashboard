@@ -1,0 +1,88 @@
+/* Container for the lab results */
+.lab-results-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  .lab-results-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Wrapper to make the list scrollable */
+  .lab-results-wrapper {
+    max-height: 300px; /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  /* Scrollbar styling */
+  .lab-results-wrapper::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .lab-results-wrapper::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+    border-radius: 4px;
+  }
+  
+  .lab-results-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+  }
+  
+  /* List styling */
+  .lab-results-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Individual list item */
+  .lab-result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 1rem;
+    color: #555555;
+  }
+  
+  /* Highlight row hover */
+  .lab-result-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Result name */
+  .lab-result-name {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  /* Download button */
+  .download-button {
+    background: none;
+    border: none;
+    color: #333333;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .download-button:hover {
+    color: #007bff; /* Highlight icon on hover */
+  }
+  
+  .download-button:focus {
+    outline: none;
+  }
+  
